@@ -1,0 +1,8 @@
+{
+  "host": "pellefant.db.elephantsql.com",
+    "database": "duavmmpp",
+  "username": "duavmmpp",
+  "password": "EhvRkXZu__Q9UOZzZ0n-_3IcQFwEmvG4",
+  "port": 5432,
+  "dialect": "postgres"
+}
