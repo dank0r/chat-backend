@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 consign()
   .include('db.js')
+  .then('socket/index.js')
   .then('routes')
   .then('libs/boot.js')
   .into(app);

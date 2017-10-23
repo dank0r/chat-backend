@@ -1,0 +1,1 @@
+module.exports = (a, b) => Math.random() - 0.5;
