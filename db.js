@@ -18,10 +18,14 @@ module.exports = (app) => {
   if (!db) {
     //onst config = app.libs.config;
     let sequelize = new Sequelize(
-      config.database,
-      config.username,
-      config.password,
-      config,
+      process.env.db_name,
+      process.env.db_username,
+      process.env.db_password,
+      {
+        host: process.env.db_host,
+        port: +process.env.db_port,
+        dialect: process.env.db_dialect,
+      },
     );
 
     db = {

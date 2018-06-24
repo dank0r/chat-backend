@@ -3,7 +3,7 @@ let consign = require('consign');
 let express = require('express');
 let bodyParser = require('body-parser');
 let cors = require('cors');
-
+require('dotenv').config()
 
 let app = express();
 
