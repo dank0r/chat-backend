@@ -6,7 +6,7 @@ module.exports = (app) => {
   let server = require('http').Server(app);
   let io = require('socket.io')(server);
 
-  server.listen(process.env.PORT || 3001);
+  //server.listen(process.env.PORT || 3001);
 
   io.on('connection', function (socket) {
 
